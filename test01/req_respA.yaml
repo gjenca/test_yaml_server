@@ -1,0 +1,10 @@
+---
+method: BADMETHOD
+headers:
+  Key: xxx
+  Field: a
+content: ''
+---
+status: 203
+headers: {}
+content: ''

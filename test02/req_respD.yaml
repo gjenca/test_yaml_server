@@ -1,0 +1,15 @@
+---
+method: GET
+headers:
+  Key: cat
+  Field: eats
+content: ''
+---
+status: 100
+headers:
+  Content-length: '18'
+content: '- rodents
+
+  - birds
+
+  '

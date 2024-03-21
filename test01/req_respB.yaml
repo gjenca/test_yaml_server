@@ -1,0 +1,9 @@
+---
+method: BADMETHOD
+headers:
+  Content-length: 3
+content: abc
+---
+status: 203
+headers: {}
+content: ''

@@ -1,0 +1,10 @@
+---
+method: GET
+headers:
+  Key: dog
+  Field: eats
+content: ''
+---
+status: 200
+headers: {}
+content: ''

@@ -1,0 +1,9 @@
+---
+method: GET
+headers:
+  Key: xxx
+content: ''
+---
+status: 300
+headers: {}
+content: ''

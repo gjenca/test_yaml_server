@@ -1,0 +1,5 @@
+method: GET
+headers:
+  Key: 'a b'
+  Field: xxx
+content: ''

@@ -1,0 +1,5 @@
+method: GET
+headers:
+  Key: dog
+  Field: eats
+content: ''

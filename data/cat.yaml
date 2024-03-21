@@ -1,0 +1,6 @@
+name: Cat
+family: Felis
+legs: 4
+eats:
+- rodents
+- birds

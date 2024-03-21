@@ -1,0 +1,5 @@
+method: BADMETHOD
+headers:
+  Key: xxx
+  Field: a
+content: ''

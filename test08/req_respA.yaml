@@ -1,0 +1,16 @@
+---
+method: FIELDS
+headers:
+  Key: elephant
+content: ''
+---
+status: 100
+headers:
+  Content-length: '23'
+content: '- family
+
+  - legs
+
+  - eats
+
+  '

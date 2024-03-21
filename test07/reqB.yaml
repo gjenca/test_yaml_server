@@ -1,0 +1,4 @@
+method: GET
+headers:
+  Field: xxx
+content: ''

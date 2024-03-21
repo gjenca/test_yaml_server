@@ -1,0 +1,4 @@
+method: BADMETHOD
+headers:
+  Content-length: 3
+content: 'abc'

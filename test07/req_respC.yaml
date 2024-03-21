@@ -1,0 +1,10 @@
+---
+method: GET
+headers:
+  Key: a/b
+  Field: xxx
+content: ''
+---
+status: 300
+headers: {}
+content: ''

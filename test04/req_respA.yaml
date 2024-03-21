@@ -1,0 +1,10 @@
+---
+method: GET
+headers:
+  Key: elephant
+  Field: hands
+content: ''
+---
+status: 202
+headers: {}
+content: ''

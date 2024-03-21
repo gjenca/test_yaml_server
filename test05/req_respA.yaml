@@ -1,0 +1,13 @@
+---
+method: KEYS
+headers: {}
+content: ''
+---
+status: 100
+headers:
+  Content-length: '17'
+content: '- elephant
+
+  - cat
+
+  '

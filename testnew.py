@@ -85,7 +85,7 @@ class Response:
             other_value=yaml.safe_load(other.content)
         else:
             other_value=None
-        if self.request.method == 'LS':
+        if self.request.method == 'KEYS':
             if value==other_value:
                 return True
             else:

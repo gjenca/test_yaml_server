@@ -1,4 +1,9 @@
-#killall python3 2>/dev/null
+#!/usr/bin/env bash
+if which kill ; then
+    KILL=kill
+elif which rkill ; then
+    KILL=rkill # rkill je na Mac OS
+fi
 if [ -e test_prepare.sh ]
 then	
 	echo '>>> Running test_prepare.sh'
@@ -11,9 +16,13 @@ sleep 0.2
 echo '>>> Running test.py'
 python3 test.py
 EXIT_STATUS=$?
-echo '>>> Killing processes with rkill'
-rkill $PIDRIESENIE 2>&1
-echo '>>>' Killed server PID "$PIDRIESENIE"
+echo ">>> Killing server process with $KILL"
+$KILL $PIDRIESENIE 2>&1
+if [ $? != 0 ]; then
+    echo ">>> $KILL failed, the server probably already exitted"
+else
+    echo '>>>' Killed server PID "$PIDRIESENIE"
+fi
 wait $PIDRIESENIE 2>/dev/null
 echo '>>> Checking with ps:' $(ps -p $PIDRIESENIE)
 echo '>>> Test exit status:' "$EXIT_STATUS"

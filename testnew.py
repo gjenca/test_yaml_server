@@ -45,8 +45,14 @@ def readline_tee(f):
 def write_tee(f,s):
     if s:
         print_and_flush(f'C->S: {repr(s)}')
-        f.write(s)
-        f.flush() 
+        # zmena: posielaj dáta po kúskoch
+        mid=len(s)//2
+        f.write(s[:mid])
+        f.flush()
+        time.sleep(0.02)
+        f.write(s[mid:])
+        f.flush()
+
 
 class Request:
 

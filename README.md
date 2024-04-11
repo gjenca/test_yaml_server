@@ -1,5 +1,11 @@
 # Testovanie YAML servera
 
+## Klonovať, nie sťahovať zip
+
+```
+git clone https://github.com/gjenca/test_yaml_server.git
+```
+
 ## Čo urobiť pred testovaním
 
 1. Je treba nainštalovať pythonovskú knižnicu `pygments`.

@@ -1,8 +1,9 @@
 #!/usr/bin/env bash
-if which kill ; then
-    KILL=kill
-elif which rkill ; then
-    KILL=rkill # rkill je na Mac OS
+set -m
+if which rkill ; then
+    KILL=rkill
+elif which kill ; then
+    KILL=kill # rkill je na Mac OS
 fi
 if [ -e test_prepare.sh ]
 then	

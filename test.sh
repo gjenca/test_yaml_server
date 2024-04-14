@@ -4,6 +4,8 @@ if which rkill ; then
     KILL=rkill
 elif which kill ; then
     KILL=kill # rkill je na Mac OS
+    echo '>>> WARNING: Cannot find rkill, using kill instead. Some child processes may stay hanging.'
+    echo '>>> WARNING: Install pslist package to avoid this message.'
 fi
 if [ -e test_prepare.sh ]
 then	

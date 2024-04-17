@@ -1,0 +1,10 @@
+---
+method: GET
+headers:
+  Key: cat
+  Field: legs
+content: ''
+---
+status: 201
+headers: {}
+content: ''

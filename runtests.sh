@@ -16,6 +16,7 @@ WHICH=""
 if [ -n "$1" ]
 then
     WHICH="_$1"
+    OUTSUFFIX="_$1_$2"
 fi
 
 ./getsource.sh "$WHICH"
@@ -108,5 +109,5 @@ cat <<THEEND
 </body>
 </html>
 THEEND
-) > results.html
+) > results$OUTSUFFIX.html
 

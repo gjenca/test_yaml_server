@@ -1,0 +1,11 @@
+---
+method: GET
+headers:
+  Key: binary_value
+  Field: picture
+content: ''
+---
+status: 100
+headers:
+  Content-length: '90'
+content: "!!binary |\n  R0lGODdhDQAIAIAAAAAAANnZ2SwAAAAADQAIAAACF4SDGQar3xxbJ9p0qa7R0YxwzaFME1IAADs=\n"

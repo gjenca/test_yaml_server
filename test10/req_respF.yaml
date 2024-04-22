@@ -1,0 +1,15 @@
+---
+method: GET
+headers:
+  Key: cat
+  Field: tail
+content: ''
+---
+status: 100
+headers:
+  Content-length: '6'
+content: '1
+
+  ...
+
+  '

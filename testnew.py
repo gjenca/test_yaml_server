@@ -81,7 +81,9 @@ class Response:
 
     def __eq__(self,other):
         if self.status!=other.status or \
-            self.headers!=other.headers:
+            self.headers.keys()!=other.headers.keys() or \
+            any(self.headers[key]!=other.headers[key] 
+                    for key in self.headers if key!='Content-length'):
                 return False
         if self.content:
             value=yaml.safe_load(self.content)

@@ -1,0 +1,6 @@
+method: PUT
+headers:
+  Key: cat
+  Field: legs
+  Content-length: 1
+content: '4'

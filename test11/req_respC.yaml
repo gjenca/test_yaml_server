@@ -1,0 +1,11 @@
+---
+method: PUT
+headers:
+  Key: cat
+  Field: legs
+  Content-length: 2
+content: '[1'
+---
+status: 206
+headers: {}
+content: ''

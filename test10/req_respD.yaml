@@ -1,0 +1,11 @@
+---
+method: PUT
+headers:
+  Key: dog
+  Field: legs
+  Content-length: 1
+content: '4'
+---
+status: 200
+headers: {}
+content: ''

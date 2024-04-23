@@ -1,0 +1,12 @@
+---
+method: POST
+headers:
+  Key: cat
+  Content-length: 3
+content: '[1
+
+  '
+---
+status: 206
+headers: {}
+content: ''

@@ -1,0 +1,6 @@
+method: POST
+headers:
+  Key: elephant
+content: |
+  legs: 4
+  tail: 1

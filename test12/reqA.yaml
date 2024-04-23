@@ -1,0 +1,7 @@
+method: POST
+headers:
+  Key: cat
+content: |
+  family: Felidae
+  legs: 3
+  eats: [rodents,birds]

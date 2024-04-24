@@ -1,0 +1,5 @@
+method: POST
+headers: {}
+content: |
+  legs: 4
+  tail: 1

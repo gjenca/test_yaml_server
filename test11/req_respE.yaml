@@ -1,0 +1,10 @@
+---
+method: PUT
+headers:
+  Key: cat
+  Content-length: 3
+content: '[1]'
+---
+status: 300
+headers: {}
+content: ''

@@ -1,0 +1,13 @@
+---
+method: POST
+headers:
+  Content-length: 16
+content: 'legs: 4
+
+  tail: 1
+
+  '
+---
+status: 300
+headers: {}
+content: ''

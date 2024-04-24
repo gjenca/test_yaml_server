@@ -1,0 +1,9 @@
+---
+method: POST
+headers:
+  Key: cat
+content: ''
+---
+status: 300
+headers: {}
+content: ''

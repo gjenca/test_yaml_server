@@ -1,0 +1,14 @@
+---
+method: POST
+headers:
+  Key: elephant
+  Content-length: 16
+content: 'legs: 4
+
+  tail: 1
+
+  '
+---
+status: 205
+headers: {}
+content: ''

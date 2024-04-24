@@ -1,0 +1,10 @@
+---
+method: PUT
+headers:
+  Key: cat
+  Field: legs
+content: ''
+---
+status: 300
+headers: {}
+content: ''

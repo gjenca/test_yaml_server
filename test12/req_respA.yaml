@@ -1,0 +1,16 @@
+---
+method: POST
+headers:
+  Key: cat
+  Content-length: 46
+content: 'family: Felidae
+
+  legs: 3
+
+  eats: [rodents,birds]
+
+  '
+---
+status: 100
+headers: {}
+content: ''

@@ -46,7 +46,7 @@ cat << THEEND
 THEEND
 
 
-TESTS="test01 test02 test03 test04 test05 test06 test07 test08 test09"
+TESTS="$(echo test??)"
 
 echo '<tr>'
 echo '<th>*</th>'

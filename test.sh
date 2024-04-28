@@ -13,10 +13,10 @@ then
 	source test_prepare.sh
 fi
 echo '>>> Starting server'
-sleep 0.05
+sleep 0.02
 python3 "$1"  >"$2" & 
 PIDRIESENIE=$!
-sleep 0.05
+sleep 0.1
 echo '>>> Running test.py'
 python3 test.py
 EXIT_STATUS=$?

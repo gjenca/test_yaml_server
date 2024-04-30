@@ -9,6 +9,18 @@ if [ "$1" = '-a' ]; then
     shift
 fi
 
+TESTS="$(echo test??)"
+
+if [ "$1" = '-t' ]; then
+    if [ "$#" -lt 3 ]; then
+        echo '-t requires FROM and TO arguments'
+        exit 1
+    fi
+    FROM=$2
+    TO=$3
+    shift 3
+    TESTS="$(seq -f 'test%02g' $FROM $TO)"
+fi
 
 PATTERN="$2"
 
@@ -44,9 +56,6 @@ cat << THEEND
 </h2>
 <table border="1">
 THEEND
-
-
-TESTS="$(echo test??)"
 
 echo '<tr>'
 echo '<th>*</th>'

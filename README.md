@@ -21,6 +21,16 @@ git clone https://github.com/gjenca/test_yaml_server.git
 5. Pre každý test máte pod linkom uvedené, čo sa posielalo a v akom stave skončil.
 6. Ak bol nejaký chybový výstup (niečo padlo), chybový výstup vidíte pod linkom err.
 
+## Spúšťanie testov z nejakého intervalu
+
+Testov je už medzičasom hodne a čakať na všetky zaberá čas.
+
+Pomocou `-t` takto:
+```
+./runtests.sh -t 2 10
+```
+spustí iba `test02` až `test10`.
+
 ## Čo robiť ak niečo nejde
 
 Ak Vám to testovanie nejde (to znamená, padá testovanie), ozvite sa mi buď

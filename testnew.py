@@ -8,7 +8,7 @@ import time
 
 TIMEOUT=0.25
 
-QUIET=False
+QUIET=True
 
 class TimeOutException(Exception):
    pass
@@ -62,7 +62,7 @@ class Request:
             if not name in d:
                 raise ValueError(f'{name} missing in request')
         self.method=d['method']
-        self.headers=d['headers']
+        self.headers=dict(d['headers'])
         # self.content je vzdy typu bytes
         self.content=d['content']
         # ak je tam text, prevedie sa
@@ -221,6 +221,7 @@ def response_to(request_d):
     return response.to_dict()
 
 if __name__=='__main__':
+    QUIET=False
     signal.setitimer(signal.ITIMER_REAL,TIMEOUT)
     #signal.alarm(TIMEOUT)
     s=socket.socket(socket.AF_INET,socket.SOCK_STREAM)

@@ -1,5 +1,5 @@
 ---
-method: BADMETHOD
+method: BADDMETHOD
 headers:
   Key: xxx
   Field: a

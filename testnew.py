@@ -6,7 +6,7 @@ import socket
 import glob
 import time
 
-TIMEOUT=0.25
+TIMEOUT=20
 
 QUIET=True
 

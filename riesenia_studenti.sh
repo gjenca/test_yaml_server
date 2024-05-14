@@ -7,6 +7,10 @@ cat ../riesenia/repos |
     do
         (cd ../riesenia/
         SRC=$(find $USER_REPO -name '*.py')
+        DATE=$(
+            cd "$USER_REPO"
+            git log -1 --format="%at" | xargs -I{} date -d @{} +%Y/%m/%d
+        ) 
         NUM=$(echo $SRC | wc -l)
         if [ ! "$NUM" == "1" ]
         then 
@@ -15,6 +19,6 @@ cat ../riesenia/repos |
         fi
         RIESENIE='../riesenia/'"$SRC"
         NAME=`echo $RIESENIE | cut -f3 -d/`
-        echo "$RIESENIE:$NAME"
+        echo "$RIESENIE:$NAME:$DATE"
         )
     done

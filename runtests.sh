@@ -66,7 +66,7 @@ for TEST in $TESTS; do
 done
 echo '</tr>'
 ./riesenia"$WHICH".sh 2>/dev/null | grep "$PATTERN" |
-while IFS=: read RIESENIE NAME ; do
+while IFS=: read RIESENIE NAME DATE; do
     if [ "$NAME" == "" ]
     then
         NAME="noname"
@@ -76,7 +76,11 @@ while IFS=: read RIESENIE NAME ; do
     OUT2=results/test_${NAME}.serverout.txt 
     printf '%-20s' "${NAME}" > /dev/stderr
     echo '<tr>'
-    echo '<th> <a href="source/'${NAME}'.html">'${NAME}'</a></th>'
+    echo '<th> <a href="source/'${NAME}'.html">'${NAME}"</a>"
+    if [ -n "$DATE" ]; then
+        echo "<br>$DATE"
+    fi
+    echo "</th>"
     for TEST in $TESTS; do
         cd $TEST
         bash test.sh ../$RIESENIE ${OUT2} 2>${ERR} >${OUT}

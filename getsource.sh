@@ -10,7 +10,7 @@ fi
 echo '>>> Converting source code'
 mkdir -p source
 ./riesenia"$WHICH".sh $@ |
-while IFS=: read RIESENIE NAME ; do
+while IFS=: read RIESENIE NAME DATE; do
     if [ "$NAME" == "" ]
     then
         NAME="noname"
